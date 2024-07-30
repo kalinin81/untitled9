@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: paycore
+
+product:
+  host: "localhost:8181"
+  path: "/api/v1/product"
+  productsByAccountUrl: "/client/{account}"
+  productsByProductIdUrl: "/client/{productId}/{balance}"
+
+server:
+  port: 8282
