@@ -1,4 +1,4 @@
-package org.product;
+package org.product.domain;
 
 public enum Type {
     ACCOUNT,

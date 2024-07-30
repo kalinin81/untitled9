@@ -1,6 +1,7 @@
-package org.product;
+package org.product.domain.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,8 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
-@Data
+@Table(name = "users")
+@Getter
+@Setter
 public class User {
 
     @Id

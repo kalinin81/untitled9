@@ -1,5 +1,7 @@
-package org.product;
+package org.product.controller;
 
+import org.product.domain.dto.ProductsDto;
+import org.product.service.ProductService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,5 +1,11 @@
-package org.product;
+package org.product.service;
 
+import org.product.domain.ProductBalanceException;
+import org.product.mapper.ProductMapper;
+import org.product.domain.ProductNotFoundException;
+import org.product.domain.dto.ProductsDto;
+import org.product.domain.entity.Product;
+import org.product.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

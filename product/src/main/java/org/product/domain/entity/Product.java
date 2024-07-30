@@ -1,6 +1,8 @@
-package org.product;
+package org.product.domain.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import org.product.domain.Type;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -13,7 +15,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table
-@Data
+@Getter
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

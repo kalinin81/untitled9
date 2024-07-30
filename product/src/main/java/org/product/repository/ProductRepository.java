@@ -1,5 +1,6 @@
-package org.product;
+package org.product.repository;
 
+import org.product.domain.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

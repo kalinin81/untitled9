@@ -1,5 +1,8 @@
-package org.product;
+package org.product.mapper;
 
+import org.product.domain.dto.ProductDto;
+import org.product.domain.dto.ProductsDto;
+import org.product.domain.entity.Product;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,7 +21,7 @@ public class ProductMapper {
             return productDto;
         }).collect(Collectors.toList());
 
-        ProductsDto productsDto = new ProductsDto(productDtoList);
+        ProductsDto productsDto = ProductsDto.builder().productDtoList(productDtoList).build();
         return productsDto;
     }
 

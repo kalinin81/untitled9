@@ -1,5 +1,7 @@
-package org.product;
+package org.product.service;
 
+import org.product.domain.entity.User;
+import org.product.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
